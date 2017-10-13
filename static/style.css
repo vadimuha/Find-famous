@@ -1,0 +1,32 @@
+html{
+	height: 100%;
+	position: relative;
+}
+body{
+	height: 100%; 
+	position: relative;
+	background-color: #126872
+}
+header{
+	display: block;
+	height: 50%;
+	position: relative;
+}
+p {
+	color: #fff;
+}
+.tab-pane{overflow-y: scroll; height: 85%;}
+#sub_btn{
+	display: block;
+	margin: 0 auto; 
+	background-color: #031727
+}
+#text{
+	background-color: #18C29C;
+}
+.btn-default{
+	background-color: #88F9D4
+}
+.form-control{
+	background-color: #0B877D
+}
