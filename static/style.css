@@ -12,6 +12,17 @@ header{
 	height: 50%;
 	position: relative;
 }
+main {
+	height: 45%
+}
+footer {
+	position: relative;
+	width: 100%;
+	padding-top:0.3%; 
+	text-align: center;
+	background-color: #88F9D4;
+	height: 5%;
+}
 p {
 	color: #fff;
 }

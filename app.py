@@ -1,8 +1,12 @@
 from flask import Flask,url_for,render_template,request,jsonify
 import sqlite3
+
 app = Flask(__name__)
+
 conn = sqlite3.connect("db.sqlite",check_same_thread=False)
 db = conn.cursor()
+
+''' Backend created by Vadim Igorovich vadimuha13@gmail.com '''
 
 @app.route("/", methods=["GET","POST"])
 def index():
