@@ -15,7 +15,7 @@
     <li role="presentation"><a href="#nobel" aria-controls="nobel" role="tab" data-toggle="tab">Nobel prize winners</a></li>
   </ul>
 
-   <div class="tab-content" style="height: 100%">
+   <div class="tab-content" style="height: 86%">
     <div role="tabpanel" class="tab-pane active" id="actors"></div>
     <div role="tabpanel" class="tab-pane" id="directors"></div>
     <div role="tabpanel" class="tab-pane" id="nobel"></div>
@@ -30,7 +30,6 @@
 		 data-loading-text="can't be empty" autocomplete="off"> 
 		 Find
 		</button>
-		<h1>{{ q }}</h1>
 	</div>
 	<script type="text/javascript">
 		 $("ul").hide();
@@ -54,14 +53,15 @@
 				$("ul").show();
 				json[1].forEach(function(item) {
 					for (i=0;i<3;i++){
-						// re = new RegExp(name,'gi')
 						 if(item[i])
 							$("#actors").append("<p>"+item[i]+"</p>")
 					}	
 				}); // Filling actors panel
+
 				json[0].forEach(function(item) {
 					$("#directors").append("<p>"+ item +"</p>")
 				}); // Filling directors panel
+
 				json[2].forEach(function(item) {
 					$("#nobel").append("<p>* "+ item[0] + " " + item[1] +  " " +  item[4] + ", Nobel prize in "+ item[2] + ", in speach said: " + item[3] +"</p>")
 				}); // Filling nobel prizers panel
