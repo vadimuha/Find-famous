@@ -50,11 +50,13 @@
 				dataType: "json"
 			})
 			.done(function (json) {
-				$("ul").show();
 				console.log(json)
+				$("ul").show();
 				json[1].forEach(function(item) {
 					for (i=0;i<3;i++){
-						$("#actors").append("<p>"+item[i]+"</p>")
+						// re = new RegExp(name,'gi')
+						 if(item[i])
+							$("#actors").append("<p>"+item[i]+"</p>")
 					}	
 				}); // Filling actors panel
 				json[0].forEach(function(item) {
